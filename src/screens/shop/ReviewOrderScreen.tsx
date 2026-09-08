@@ -61,7 +61,7 @@ export function ReviewOrderScreen({ route, navigation }: Props) {
 
   const handleConfirm = () => {
     setSubmitting(true);
-    // Simulated submit \u2014 stands in for the real order/EMI-activation call.
+    // Simulated submit - stands in for the real order/EMI-activation call.
     setTimeout(() => {
       setSubmitting(false);
       setConfirmed(true);
@@ -87,8 +87,8 @@ export function ReviewOrderScreen({ route, navigation }: Props) {
           </View>
           <Text style={styles.successTitle}>Your no-cost EMI is confirmed</Text>
           <Text style={styles.successSubtitle}>
-            {product.name} \u00b7 {variant.label} is on its way. Your first instalment of{' '}
-            {formatINR(plan.monthlyAmount)} is backed by your mutual fund holdings \u2014 no credit
+            {product.name} . {variant.label} is on its way. Your first instalment of{' '}
+            {formatINR(plan.monthlyAmount)} is backed by your mutual fund holdings - no credit
             score, no interest.
           </Text>
           <View style={styles.successButton}>
@@ -155,7 +155,7 @@ export function ReviewOrderScreen({ route, navigation }: Props) {
           <Ionicons name="information-circle-outline" size={18} color={colors.primary} />
           <Text style={styles.noteText}>
             Your EMI limit is secured against your existing mutual fund holdings. No units are
-            sold \u2014 you keep earning returns on your investments while you repay.
+            sold - you keep earning returns on your investments while you repay.
           </Text>
         </View>
       </ScrollView>

@@ -98,7 +98,7 @@ export function MarketplaceTabContent({ searchQuery }: { searchQuery: string }) 
               {row.length === 1 && <View style={styles.gridItem} />}
             </View>
           ))}
-          {isFetching && !isLoading && <Text style={styles.refreshingHint}>Refreshing\u2026</Text>}
+          {isFetching && !isLoading && <Text style={styles.refreshingHint}>Refreshing...</Text>}
         </View>
       )}
     </View>

@@ -97,7 +97,7 @@ export function ProductDetailScreen({ route, navigation }: Props) {
         <View style={styles.ratingRow}>
           <Ionicons name="star" size={14} color={colors.warning} />
           <Text style={styles.ratingText}>
-            {product.rating.toFixed(1)} \u00b7 {product.reviewCount.toLocaleString('en-IN')} ratings
+            {product.rating.toFixed(1)} . {product.reviewCount.toLocaleString('en-IN')} ratings
           </Text>
         </View>
 

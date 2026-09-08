@@ -29,7 +29,7 @@ export function EMIPlanCard({ plan, selected, onSelect }: EMIPlanCardProps) {
           {plan.recommended && <Badge label="Recommended" tone="primary" />}
         </View>
         <Text style={styles.monthly}>{formatINR(plan.monthlyAmount)}/month</Text>
-        <Text style={styles.total}>Total payable {formatINR(plan.totalAmount)} \u00b7 0% interest</Text>
+        <Text style={styles.total}>Total payable {formatINR(plan.totalAmount)} · 0% interest </Text>
       </View>
 
       <Badge label="No-Cost" tone="success" />
